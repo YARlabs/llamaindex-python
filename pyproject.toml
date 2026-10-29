@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llama-index-vector-stores-hyperspace"
+version = "4.2.0"
+description = "Official LlamaIndex VectorStore, PropertyGraphStore (KAG), and Tribunal Router integration for HyperspaceDB"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "YARlabs", email = "hi@yar.ink"}
+]
+keywords = ["llama-index", "vector database", "property-graph", "kag", "embeddings", "AI", "RAG", "hyperbolic"]
+dependencies = [
+    "llama-index-core>=0.10.0",
+    "hyperspacedb>=4.1.0",
+    "grpcio>=1.60.0",
+    "protobuf>=4.25.0",
+    "numpy>=1.24.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
